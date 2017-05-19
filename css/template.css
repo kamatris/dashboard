@@ -12,7 +12,6 @@ body::-webkit-scrollbar-thumb {
     background-color: #FFB800;
     outline: 1px solid red;
 }
-
 .color-blue{color:#1D92AF}
 .color-segreen{color:#3F7577}
 .color-orang{color:#CE7B11}
@@ -67,6 +66,7 @@ body::-webkit-scrollbar-thumb {
     color: #fff;
     background-color: #000;
     border-radius: 0px;
+    transition: .2s ;
 }
 .top-bar .navbar-form {
     padding: 0px 15px;
@@ -77,6 +77,12 @@ body::-webkit-scrollbar-thumb {
     border-top: 0px solid transparent;
     border-bottom: 0px solid transparent;
     box-shadow: none;
+}
+
+.top-bar .form-control:focus{
+  background-color: #fff;
+  border-radius: 3px;
+  color: #000;
 }
 .navbar-nav {
     text-align: center;
@@ -135,7 +141,6 @@ body::-webkit-scrollbar-thumb {
     -webkit-box-shadow: 1px 4px 5px 4px rgba(0,0,0,0.3);
     box-shadow: 1px 4px 5px 4px rgba(0,0,0,0.3);
     overflow-y: scroll;
-    transition: 0.5s;
     z-index: 99;
 }
 .hide-sidebar {
@@ -197,14 +202,8 @@ body::-webkit-scrollbar-thumb {
   font-size: 1.4em;
   margin-right: 10px;
 }
-/*right-container*****************/
-@media (min-width: 768px) {
+/*********************right-container*****************/
 
-.left-container{width:18%;float: left;transition:0.5s;}
-.right-container{width:82%;float:right;transition:0.5s;margin-top: 70px;}
-.less-width{width:0%;transition:0.5s;}
-.full-width{width:100%;transition:0.5s;}
-}
 .mini-stat h5{
     float: left;
     margin: 0;
@@ -246,4 +245,28 @@ body::-webkit-scrollbar-thumb {
 
 .main-header em {
     color: #bbbbbb;
+}
+.content {
+    box-shadow: 0 0 1px;
+    margin: 5px 5px;
+    width: 49%;
+    transition: .2s all;
+}
+
+.content:hover{
+  cursor: pointer;
+  box-shadow: 0 3px 5px #084951;
+  transform: translateZ(-10px);
+  border-radius: 3px;
+}
+
+/******************************************
+* * * * * * * * Media Query * * * * * * * *
+******************************************/
+@media (min-width: 768px) {
+
+.left-container{width:18%;float: left;transition:0.5s;}
+.right-container{width:85%;float:right;transition:0.5s;margin-top: 70px;}
+.less-width{width:0%;transition:0.5s;}
+.full-width{width:100%;transition:0.5s;}
 }
