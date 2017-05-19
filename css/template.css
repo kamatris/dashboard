@@ -35,6 +35,10 @@ body::-webkit-scrollbar-thumb {
 }
 /*Top Navbar/////////START///////////*/
 
+.logo{
+  color: #ffffff;
+  margin-top: calc(5%);
+}
 .top-bar {
     background-color: #084951;
     padding: 0px;
@@ -45,7 +49,7 @@ body::-webkit-scrollbar-thumb {
 .menu-icon {
     float: left;
     height: 50px;
-    padding: 10px 15px;
+    padding: 6px 15px;
     font-size: 18px;
     font-size: 25px;
     color: #fff;
@@ -193,11 +197,6 @@ body::-webkit-scrollbar-thumb {
   font-size: 1.4em;
   margin-right: 10px;
 }
-
-
-
-
-
 /*right-container*****************/
 @media (min-width: 768px) {
 
